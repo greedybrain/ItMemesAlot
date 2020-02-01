@@ -120,7 +120,7 @@ users.first.followers.create(
      ]
 )
 
-users.first.is_following.create(
+users.first.is_followings.create(
      [
           { 
                username: users.second.username,
@@ -128,19 +128,9 @@ users.first.is_following.create(
                last_name: users.second.last_name
           },
           { 
-               username: users.third.username,
-               first_name: users.third.first_name,
-               last_name: users.third.last_name
-          },
-          { 
                username: users.fourth.username,
                first_name: users.fourth.first_name,
                last_name: users.fourth.last_name
           },
-          { 
-               username: users.fifth.username,
-               first_name: users.fifth.first_name,
-               last_name: users.fifth.last_name
-          }
      ]
 )
