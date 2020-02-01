@@ -1,0 +1,2 @@
+class IsFollowingsController < ApplicationController
+end
