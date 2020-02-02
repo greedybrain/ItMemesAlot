@@ -1,3 +1,14 @@
-<h1>This is the root most page</h1>
+<header>
+     <div class="logo">
+          <%= render 'shared/logo' %>
+     </div>
+     <div class="login-signup">
+          <%= link_to 'Login', login_path %>
+          <%= link_to 'Signup', signup_path %>
+     </div>
+</header>
 
-<%= link_to 'Login', login_path %>
+
+<%# <div class="meme-feed">
+
+</div> %>

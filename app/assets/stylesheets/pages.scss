@@ -1,3 +1,32 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a {
+     text-decoration: none;
+     color: #fff;
+}
+
+body {
+     background-color: #000;
+     color: #fff;
+}
+
+// header 
+header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px 20px 0 20px;
+
+     .login-signup {
+          a {
+               margin-right: 20px;
+          }
+     }
+}

@@ -16,7 +16,7 @@ class UsersController < ApplicationController
           @user = User.new(user_params)
           if @user.save 
                session[:user_id] = @user.id
-               redirect_to user_path(@user), notice: "Welcome to the alpha blog #{@user.first_name} #{@user.last_name}"
+               redirect_to user_path(@user), notice: "Welcome to the alpha blog #{@user.first_name}!"
           else
                render :new
           end
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
      def update 
           set_params
           if @user.update(user_params)
-               redirect_to user_path(@user)
+               redirect_to user_path(@user), notice: "Your account has been updated"
           else
                render :edit
           end
