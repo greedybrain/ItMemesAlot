@@ -1,13 +1,13 @@
 <h1>Login Page</h1>
 
-<%= form_for sessions_path do |f| %>
+<%= form_tag sessions_path do %>
 
-     <%= f.label :username %><br>
-     <%= f.text_field :username %><br><br>
+     <%= label_tag :username %><br>
+     <%= text_field_tag :username %><br><br>
 
-     <%= f.label :password %><br>
-     <%= f.password_field :password %><br><br>
+     <%= label_tag :password %><br>
+     <%= password_field_tag :password %><br><br>
 
-     <%= f.submit "Login" %>
+     <%= submit_tag "Login" %>
 
 <% end %>
