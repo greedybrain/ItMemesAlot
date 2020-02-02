@@ -1,2 +1,0 @@
-class IsFollowingsController < ApplicationController
-end

@@ -95,42 +95,42 @@ replies = Reply.create(
      ]
 )
 
-users.first.followers.create(
-     [
-          { 
-               username: users.second.username,
-               first_name: users.second.first_name,
-               last_name: users.second.last_name
-          },
-          { 
-               username: users.third.username,
-               first_name: users.third.first_name,
-               last_name: users.third.last_name
-          },
-          { 
-               username: users.fourth.username,
-               first_name: users.fourth.first_name,
-               last_name: users.fourth.last_name
-          },
-          { 
-               username: users.fifth.username,
-               first_name: users.fifth.first_name,
-               last_name: users.fifth.last_name
-          }
-     ]
-)
+# users.first.followers.create(
+#      [
+#           { 
+#                username: users.second.username,
+#                first_name: users.second.first_name,
+#                last_name: users.second.last_name
+#           },
+#           { 
+#                username: users.third.username,
+#                first_name: users.third.first_name,
+#                last_name: users.third.last_name
+#           },
+#           { 
+#                username: users.fourth.username,
+#                first_name: users.fourth.first_name,
+#                last_name: users.fourth.last_name
+#           },
+#           { 
+#                username: users.fifth.username,
+#                first_name: users.fifth.first_name,
+#                last_name: users.fifth.last_name
+#           }
+#      ]
+# )
 
-users.first.is_followings.create(
-     [
-          { 
-               username: users.second.username,
-               first_name: users.second.first_name,
-               last_name: users.second.last_name
-          },
-          { 
-               username: users.fourth.username,
-               first_name: users.fourth.first_name,
-               last_name: users.fourth.last_name
-          },
-     ]
-)
+# users.first.is_followings.create(
+#      [
+#           { 
+#                username: users.second.username,
+#                first_name: users.second.first_name,
+#                last_name: users.second.last_name
+#           },
+#           { 
+#                username: users.fourth.username,
+#                first_name: users.fourth.first_name,
+#                last_name: users.fourth.last_name
+#           },
+#      ]
+# )
